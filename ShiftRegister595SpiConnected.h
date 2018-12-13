@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Timespan.h>
+#include "Timespan.h"
 
 template <
     typename latchPin,
