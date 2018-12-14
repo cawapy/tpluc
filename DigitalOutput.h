@@ -5,7 +5,7 @@ namespace tpluc
     template<uint8_t pin> struct PortBDigitalOutput
     {
         static const uint8_t bit = 1 << pin;
-        static void Enable() { DDRB | bit; }
+        static void Enable() { DDRB |= bit; }
         static void Disable() { DDRB &= ~bit; }
         static void Set() { PORTB |= bit; }
         static void Clear() { PORTB &= ~bit; }
@@ -14,7 +14,7 @@ namespace tpluc
     template<uint8_t pin> struct PortCDigitalOutput
     {
         static const uint8_t bit = 1 << pin;
-        static void Enable() { DDRC | bit; }
+        static void Enable() { DDRC |= bit; }
         static void Disable() { DDRC &= ~bit; }
         static void Set() { PORTC |= bit; }
         static void Clear() { PORTC &= ~bit; }
@@ -23,7 +23,7 @@ namespace tpluc
     template<uint8_t pin> struct PortDDigitalOutput
     {
         static const uint8_t bit = 1 << pin;
-        static void Enable() { DDRD | bit; }
+        static void Enable() { DDRD |= bit; }
         static void Disable() { DDRD &= ~bit; }
         static void Set() { PORTD |= bit; }
         static void Clear() { PORTD &= ~bit; }
